@@ -1,0 +1,18 @@
+
+[
+  {
+    "name": "status",
+    "endpoint": "/status",
+    "expected_status": 200
+  },
+  {
+    "name": "products",
+    "endpoint": "/products",
+    "expected_status": 200
+  },
+  {
+    "name": "unauthorized_profile",
+    "endpoint": "/users/me",
+    "expected_status": 401
+  }
+]
