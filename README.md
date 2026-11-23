@@ -40,5 +40,3 @@ python -m pytest -m smoke -v
 - [Xem Pull Request #1](https://github.com/huyhoang2k5/toolshop-automation-group1/pull/1)
 
 ---
-
-**Các buổi tiếp theo:** Sprint 2 mở rộng kiểm thử API, Network Mocking và UI Regression; Sprint 2B bổ sung BDD và GitHub Actions CI.
