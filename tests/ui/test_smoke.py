@@ -39,7 +39,7 @@ def test_smoke_add_three_claw_hammers(page):
 
 
 @pytest.mark.smoke
-def test_smoke_invalid_login(page):
+def test_smoke_invalid_login(page, base_url):
     """Goal: Log in using a nonexistent account.
     Precondition: Login page is accessible.
     Expected: Error is displayed and login page remains open.
@@ -49,7 +49,7 @@ def test_smoke_invalid_login(page):
 
     expect(login.error).to_contain_text("Invalid email or password")
     expect(page).to_have_url(
-        "https://practicesoftwaretesting.com/auth/login"
+        f"{base_url}/auth/login"
     )
 
 
